@@ -1,8 +1,9 @@
 import Link from "next/link";
-import { InstallBlock } from "@/components/InstallBlock";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { Logo } from "@/components/Logo";
+import { InstallBlock } from "@/components/InstallBlock";
+import { CodeBlock } from "@/components/CodeBlock";
 
 export default function Home() {
   return (
@@ -70,10 +71,6 @@ function Hero() {
     </section>
   );
 }
-
-
-
-
 
 function ReceiptShowcase() {
   const events = [
@@ -174,8 +171,8 @@ function CodeSample() {
         </p>
       </div>
 
-      <div className="mx-auto max-w-[760px] overflow-x-auto rounded-xl bg-ink p-8 shadow-soft">
-        <pre className="font-mono text-[14px] leading-[1.75] text-[#e5e7eb]">
+      <div className="mx-auto max-w-[760px]">
+        <CodeBlock language="typescript">
 {`import { Logbook } from '@logbook/sdk';
 
 // one-time: register the agent (free)
@@ -188,7 +185,7 @@ await logbook.log({ action: 'swap', resource: '0x833...USDC' });
 // anyone can verify, anytime (free)
 await Logbook.verify({ eventId: 'evt_abc123' });
 // → { valid: true, chainLength: 4 }`}
-        </pre>
+        </CodeBlock>
       </div>
     </section>
   );

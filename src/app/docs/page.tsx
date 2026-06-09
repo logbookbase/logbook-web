@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
+import { CodeBlock } from "@/components/CodeBlock";
 
 export const metadata = {
   title: "Docs · logbook",
@@ -123,14 +124,6 @@ function Section({ id, title, children }: { id: string; title: string; children:
       <h2 className="mb-4 text-2xl font-bold tracking-tight">{title}</h2>
       <div className="space-y-4 text-[15px] leading-relaxed text-ink">{children}</div>
     </section>
-  );
-}
-
-function CodeBlock({ children }: { children: React.ReactNode }) {
-  return (
-    <pre className="overflow-x-auto rounded-lg bg-ink p-5 font-mono text-[13px] leading-[1.7] text-[#e5e7eb]">
-      {children}
-    </pre>
   );
 }
 
