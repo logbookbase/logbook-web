@@ -227,6 +227,14 @@ function ValidResult({
               <>
                 <div className="text-[13px] text-ink">$0.001 USDC</div>
                 <div className="text-[11px] text-faint">x402 on Base mainnet</div>
+                <a
+                  href="https://basescan.org/address/0x1f652dF44Cc2b73793FAD984e81966EeCBf70F7c"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-1 inline-flex items-center gap-0.5 text-[11px] text-accent transition-opacity hover:opacity-70"
+                >
+                  view pay-to wallet on Basescan →
+                </a>
               </>
             }
           />
