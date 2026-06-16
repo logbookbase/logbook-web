@@ -96,12 +96,13 @@ const proof = await Logbook.verify(event.id);
           <p>
             Logbook is shipped as a Bankr skill. Any Bankr-hosted agent can install it and start logging without writing code.
           </p>
-          <CodeBlock>{`bankr skills add github.com/logbookbase/logbook`}</CodeBlock>
+          <CodeBlock>{`bankr skills add github.com/logbookbase/logbook-skill`}</CodeBlock>
           <p>
             After install, the agent knows when to log (trades, transfers, token launches, automated decisions) and handles the x402 payment using the agent's own wallet.
           </p>
           <p>
-            See{" "}
+            Skill source:{" "}
+            <Ext href="https://github.com/logbookbase/logbook-skill">github.com/logbookbase/logbook-skill</Ext>. See{" "}
             <Ext href="https://docs.bankr.bot/skills/overview">docs.bankr.bot</Ext> for the Bankr skill system overview.
           </p>
         </Section>

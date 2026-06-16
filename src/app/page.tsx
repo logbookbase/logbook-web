@@ -3,6 +3,7 @@ import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { Logo } from "@/components/Logo";
 import { InstallBlock } from "@/components/InstallBlock";
+import { InlineCommand } from "@/components/InlineCommand";
 import { CodeBlock } from "@/components/CodeBlock";
 
 export default function Home() {
@@ -61,6 +62,11 @@ function Hero() {
       </div>
 
       <InstallBlock />
+
+      <div className="mt-3 text-[13px] text-muted">
+        on Bankr?{" "}
+        <InlineCommand command="bankr skills add github.com/logbookbase/logbook-skill" />
+      </div>
 
       <Link
         href="/agents/did:logbook:demo123abc"
