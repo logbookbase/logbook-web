@@ -69,7 +69,7 @@ function Hero() {
       </div>
 
       <Link
-        href="/agents/did:logbook:demo123abc"
+        href="/agents/did:logbook:H7AhXunw5t15xfoQeBErnnvVohxxZebFXgZ8Lodukzgr"
         className="mt-6 inline-block text-sm font-medium text-muted no-underline transition-colors hover:text-accent"
       >
         View a live agent's log <span className="text-faint">↗</span>
