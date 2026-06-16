@@ -31,8 +31,7 @@ export function Footer() {
 
         <FooterCol title="Community">
           <FooterLink href="https://github.com/logbookbase/logbook">GitHub</FooterLink>
-          <FooterLink href="https://x.com">X / Twitter</FooterLink>
-          <FooterLink href="https://warpcast.com">Farcaster</FooterLink>
+          <FooterLink href="https://x.com/logbookonbase">X / Twitter</FooterLink>
           <FooterLink href="/docs#bankr">Bankr skill</FooterLink>
         </FooterCol>
       </div>
